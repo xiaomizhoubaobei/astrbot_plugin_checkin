@@ -1,0 +1,27 @@
+# PyCharm/IntelliJ IDEA 项目文件
+.idea/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# 日志文件
+*.log
+
+# 本地配置文件
+.env
+
+# 数据文件（如果需要排除）
+# data/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+.arts/
