@@ -8,7 +8,7 @@ import random
 from astrbot.api.all import *
 from astrbot.api.event.filter import command, event_message_type, EventMessageType
 
-from messages import get_random_message
+from .messages import get_random_message
 
 logger = logging.getLogger("pluginCheckIn")
 
