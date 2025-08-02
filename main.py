@@ -72,7 +72,7 @@ def _generate_rewards() -> int:
 
 
 @register("签到插件", "祁筱欣", "一个签到插件", "1.0.0",
-          "https://github.com/Meguminlove/astrbot_checkin_plugin")
+          "https://github.com/xiaomizhoubaobei/astrbot_plugin_checkin")
 class CheckInPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
