@@ -2,13 +2,14 @@ import json
 import logging
 import os
 from typing import Dict, Any
+from astrbot.api.star import StarTools
 
 logger = logging.getLogger("pluginCheckIn")
 
 class DataManager:
-    def __init__(self, data_dir: str = "data/plugins/astrbot_plugin_checkin"):
+    def __init__(self):
         """初始化数据管理器"""
-        self.DATA_DIR = data_dir
+        self.DATA_DIR = StarTools.get_data_dir("astrbot_plugin_checkin")
         os.makedirs(self.DATA_DIR, exist_ok=True)
         self.DATA_FILE = os.path.join(self.DATA_DIR, "checkin_data.json")
         self.data = self._load_data()

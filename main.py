@@ -7,7 +7,7 @@ from astrbot.api.event.filter import command, event_message_type, EventMessageTy
 from .core.check_in_manager import CheckInManager
 from .core.data_manager import DataManager
 from .core.rank_system import RankSystem
-from .messages import get_random_message
+from .core.messages import get_random_message
 
 logger = logging.getLogger("pluginCheckIn")
 
